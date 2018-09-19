@@ -16,7 +16,7 @@ The first thing we have to do is create an API client that will execute the reso
 
 var token = ""
 var client = UnsplashClient { request -> [String: String] in
-    return [ "Authorization": "Bearer \(token)"]
+    return [ "Authorization": "Client-ID \(token)"]
 }
 
 /*:
